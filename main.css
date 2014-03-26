@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS reset
+==================== */
+
+/* Main Styles
+=============== */
+@font-face {
+	font-family: 'theanodidot';
+	src: url('fonts/TheanoDidot-Regular.ttf') format ('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'rondo';
+	src: url('fonts/rondo/rondo.eot?#') format('eot'),
+		 url('fonts/rondo/rondo.svg#rondo') format('svg'),
+		 url('fonts/rondo/rondo.woff') format('woff'),
+		 url('fonts/rondo/rondo.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'Raleway';
+	font-weight: 800;
+	color: #111;
+	background: gainsboro;
+	text-transform: uppercase;
+}
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+#main {
+	margin: 0 auto;
+}
+nav {
+	font-size: 1.125em;
+	font-weight: 300;
+}
+nav,
+nav ul,
+nav li {
+	display: inline-block;
+}
+nav ul {
+	margin-top: 10px;
+}
+nav li {
+	width: 47%;
+	margin: -3px;
+}
+img {
+	max-width: 100%;
+}
+h4:first-of-type,
+h4 {
+	padding-bottom: 10px;
+}
+footer {
+	font-weight: 500;
+}
+header {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #111;
+}
+header h1 {
+	font-size: 2.25em;
+}
+header h2 {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+#services,
+#skills,
+#connect,
+#projects h3 {
+	text-align: center;
+}
+#projects,
+#services,
+#skills,
+#connect {
+	border-bottom: 3px solid #111;
+}
+#services,
+#skills,
+#connect {
+	padding-bottom: 10px;
+}
+#services li,
+#skills li {
+	text-align: left;
+	font-weight: 500;
+}
+#services ul,
+#skills ul {
+	width: 90%;
+	margin: 0 auto;
+}
+h3 {
+	font-size: 2em;
+	margin: 10px 0;
+}
+h4 {
+	font-weight: 500;
+}
+a {
+	color: #111;
+	text-decoration: none;
+}
+a:hover {
+	color: plum;
+}
+/* Social Icon Content Generation
+================================== */
+[data-icon]:before {
+	font-family: 'rondo';
+	content: attr(data-icon);
+	speak: none;
+	/* Enable Ligatures */
+	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
+	font-feature-settings:"liga","dlig";
+	text-rendering:optimizeLegibility;
+}
+.icon-email:before {
+	content: "\65\6d\61\69\6c";
+}
+.icon-twitter:before {
+	content: "\74\77\69\74\74\65\72";
+}
+.icon-github:before {
+	content: "\67\69\74\68\75\62";
+}
+.icon-tumblr:before {
+	content: "\74\75\6d\62\6c\72";
+}
+.icon-linkedin:before {
+	content: "\6c\69\6e\6b\65\64\69\6e";
+}
+#social_icons {
+	text-transform: lowercase;
+	font-size: 3.2em;
+}
+/* Social Icon Transitions
+=========================== */
+#social_icons a {
+	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+}
+/* Social Icon Brand Hover Colors */
+#social_icons a:hover:first-of-type {
+	color: #d0362c;
+}
+#social_icons a:hover:nth-child(2) {
+	color: #4a98f0;
+}
+#social_icons a:hover:nth-child(3) {
+	color: #1460ab;
+}
+#social_icons a:hover:last-of-type {
+	color: #2d4563;
+}
+/* Footer Styles
+================= */
+footer {
+	text-align: center;
+}
+h5:first-of-type {
+	position: relative;
+	padding: 20px 0;
+}
+#hexagon {
+	font-weight: 400;
+	font-size: 1.5em;
+}
+.uparrow {
+	font-size: 2em;
+	position: relative;
+	right: 0;
+}
+#hexagon,
+.return,
+.uparrow {
+	display: inline-block;
+}
+.return,
+.uparrow {
+	position: absolute;
+}
+.return {
+	right: 50px;
+	top: 20px;
+}
+.uparrow {
+	right: 0;
+	top: 22px;
+	font-size: 2.25em;
+}
+
