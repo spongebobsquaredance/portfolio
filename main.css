@@ -61,12 +61,6 @@ table {
 	font-weight: normal;
 	font-style: normal;
 }
-@font-face {
-	font-family: 'quivira';
-	src: url('fonts/Quivira.otf')
-	font-weight: normal;
-	font-style: normal;
-}
 html,
 body,
 #wrap,
@@ -86,72 +80,16 @@ body {
 	top: 0;
 	left: 0;
 }
-header figure {
-	font-family: 'quivira', sans-serif;
-}
-/* Fly-out Nav Styles 
-===================== */
-.wrap {
-  position: relative;
-  right: 0; /*Added to initialize position for Chrome 32+ */
-  transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;  
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-}
-.wrap.active {
-  right: 13em; /* 16em */
-}
-a.menu-link {
-    float: right;
-    display: block;
-    padding: 1em;
-}
-nav[role=navigation] {
-  background: #111;
-  clear: both;
-  overflow: hidden;
-  float: right;
-}
-.js nav[role=navigation] {
-  width: 13em; /* 16em */
-  height: 171px;
-  position: absolute;
-  top: 0;
-  right: -13em; /* -16em */
-}
-nav[role=navigation] ul {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #111;
-  
-}
-nav[role=navigation] li a {
-  display: block;
-  padding: 0.8em 0 0.8em 4em; /* Was padding: 0.8em; */
-  color: #eee;
-  font-weight: 300;
-  text-align: left;
-  border-bottom: 1px solid #eee;
-}
-h1 {
-	clear: both;
-}
-#main {
-	clear: both;
-}
-/* End Fly-out Nav Styles 
-========================= */
 
 header,
-#projects,
-#services,
-#skills,
 #connect {
 	height: 100%;
 }
-/*
+#services,
+#skills {
+	height: 50%;
+}
+
 header {
 	width: 100%;
 	position: fixed;
@@ -161,10 +99,10 @@ header {
 	position: relative;
 	top: 100%;
 }
-*/
+
 header h1 {
 	font-size: 2.25em;
-	margin-top: 270px;
+	margin-top: 150px;
 }
 header figure {
 	font-size: 3.5em;
@@ -176,17 +114,49 @@ header h2 {
 	font-size: 1.5em;
 	font-weight: 500;
 }
+nav ul {
+	width: 70%;
+	margin: 65px auto 0 auto;
+}
+nav ul li {
+	margin-top: 10px;
+	padding: 10px;
+	background: #111;
+}
+nav ul li a {
+	display: block;
+	color: #eee;
+	font-weight: 400;
+}
 img {
 	max-width: 100%;
 }
-#projects h4 {
+#projects article {
 	text-align: left;
+	width: 320px;
+	margin: 20px auto 0 auto;
+	padding: 15px;
+	background: #eee;
+}
+#projects h4 {
+	padding-top: 5px;
+}
+#projects {
+	padding-bottom: 20px;
+}
+#services ul {
+	width: 306px;
+	margin: 0 auto;
+}
+#skills ul {
+	width: 306px;
+	margin: 0 auto;
 }
 #services li,
 #skills li {
 	text-align: left;
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	margin-top: 25px;
 }
 h3 {
@@ -233,12 +203,13 @@ a {
 }
 #social_icons {
 	text-transform: lowercase;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 #social_icons a {
 	display: block;
-	margin-top: 20px;
 	font-size: 5.5em;
+	width: 100px;
+	margin: 20px auto;
 }
 /* Social Icon Transitions
 =========================== */
@@ -284,7 +255,7 @@ header {
 /* Footer Styles
 ================ */
 footer {
-	font-weight: 500;
+	font-weight: 400;
 	padding: 10px 0;
 	background: #111;
 	color: #eee;
