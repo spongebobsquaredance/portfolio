@@ -63,7 +63,7 @@ table {
 }
 html,
 body,
-#wrapper,
+#wrap,
 #main {
 	height: 100%;
 }
@@ -71,11 +71,64 @@ body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-weight: 800;
 	color: #111;
-	background: gainsboro;
+	background: #eee;
 	text-transform: uppercase;
 	text-align: center;
 }
+/* Fly-out Nav Styles 
+===================== */
+.wrap {
+  position: relative;
+  right: 0; /*Added to initialize position for Chrome 32+ */
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;  
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+.wrap.active {
+  right: 13em; /* 16em */
+}
+a.menu-link {
+    float: right;
+    display: block;
+    padding: 1em;
+}
+nav[role=navigation] {
+  background: #111;
+  clear: both;
+  overflow: hidden;
+  float: right;
+}
+.js nav[role=navigation] {
+  width: 13em; /* 16em */
+  height: 171px;
+  position: absolute;
+  top: 0;
+  right: -13em; /* -16em */
+}
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #111;
+  
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em 0 0.8em 4em; /* Was padding: 0.8em; */
+  color: #eee;
+  font-weight: 300;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+h1 {
+	clear: both;
+}
+/* End Fly-out Nav Styles 
+========================= */
+
 header,
+#projects,
 #services,
 #skills,
 #connect {
@@ -92,37 +145,17 @@ header {
 }
 header h1 {
 	font-size: 2.25em;
-	margin-top: 225px;
+	margin-top: 270px;
+}
+header figure {
+	font-size: 3.5em;
+	font-family: sans-serif;
+	font-weight: 300;
 }
 header h2 {
-	margin-top: 25px;
+	margin-top: 10px;
 	font-size: 1.5em;
 	font-weight: 500;
-}
-nav {
-	margin-top: 80px;
-	font-size: 1.125em;
-	font-weight: 500;
-}
-nav,
-nav ul,
-nav li {
-	display: block;
-}
-nav ul {
-	width: 93%;
-	margin: 0 auto;
-}
-nav li {
-	padding: 15px 0;
-	margin: 15px 0;
-	background: #111;
-}
-nav li a {
-	color: #eee;
-}
-nav li a:hover {
-	border-bottom: 3px solid #eee;
 }
 img {
 	max-width: 100%;
@@ -148,6 +181,7 @@ a {
 	color: #111;
 	text-decoration: none;
 }
+
 /* Social Icon Content Generation
 ================================== */
 [data-icon]:before {
@@ -224,12 +258,16 @@ header {
 #connect {
 	background: #eee;
 }
-/* Footer Styles */
+/* Footer Styles
+================ */
 footer {
 	font-weight: 500;
 	padding: 10px 0;
 	background: #111;
 	color: #eee;
 }
+
+
+
 
 
