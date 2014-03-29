@@ -159,6 +159,9 @@ img {
 	font-size: 1.4em;
 	margin-top: 25px;
 }
+#services li:before {
+	content: "\2b21";
+}
 h3 {
 	padding-top: 25px;
 	font-size: 2em;
