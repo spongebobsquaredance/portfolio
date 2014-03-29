@@ -61,6 +61,10 @@ table {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+font-family: 'farray';
+src: url("fonts/FARRAY.otf") format("opentype");
+}
 html,
 body,
 #wrap,
@@ -81,13 +85,8 @@ body {
 	left: 0;
 }
 
-header,
-#connect {
+header {
 	height: 100%;
-}
-#services,
-#skills {
-	height: 50%;
 }
 
 header {
@@ -101,7 +100,8 @@ header {
 }
 
 header h1 {
-	font-size: 2.25em;
+	font-family: 'FARRAY';
+	font-size: 3em; /* Was 2.25em */
 	margin-top: 150px;
 }
 header figure {
@@ -115,7 +115,8 @@ header h2 {
 	font-weight: 500;
 }
 nav ul {
-	width: 70%;
+	width: 60%;
+	max-width: 280px;
 	margin: 65px auto 0 auto;
 }
 nav ul li {
@@ -147,10 +148,12 @@ img {
 #services ul {
 	width: 306px;
 	margin: 0 auto;
+	padding-bottom: 40px;
 }
 #skills ul {
 	width: 306px;
 	margin: 0 auto;
+	padding-bottom: 40px;
 }
 #services li,
 #skills li {
@@ -158,9 +161,6 @@ img {
 	font-weight: 500;
 	font-size: 1.4em;
 	margin-top: 25px;
-}
-#services li:before {
-	content: "\2b21";
 }
 h3 {
 	padding-top: 25px;
@@ -207,12 +207,17 @@ a {
 #social_icons {
 	text-transform: lowercase;
 	margin-top: 50px;
+	max-width: 280px;
+	margin: 0 auto;
 }
 #social_icons a {
-	display: block;
+	display: inline-block;
 	font-size: 5.5em;
 	width: 100px;
 	margin: 20px auto;
+}
+#social_icons a:nth-child(odd) {
+	padding-right: 30px;
 }
 /* Social Icon Transitions
 =========================== */
@@ -238,22 +243,22 @@ a {
 /* Section Background Colors
 ============================ */
 header {
-	background: #eee;
+	background: #fff;
 }
 #projects {
-	background: #fff;
+	background: #eee;
 }
 
 #services {
-	background: #eee;
-}
-
-#skills {
 	background: #fff;
 }
 
-#connect {
+#skills {
 	background: #eee;
+}
+
+#connect {
+	background: #fff;
 }
 /* Footer Styles
 ================ */
