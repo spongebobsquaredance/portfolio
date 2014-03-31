@@ -86,12 +86,11 @@ body {
 }
 
 header {
-	height: 100%;
-}
-
-header {
 	width: 100%;
+	height: 100%;
 	position: fixed;
+	z-index: -1;
+	text-align: left;
 }
 #main {
 	width: 100%;
@@ -100,24 +99,23 @@ header {
 }
 
 header h1 {
-	font-family: 'FARRAY';
+	font-family: 'FARRAY', 'Raleway', Helvetica, Arial, sans-serif;
 	font-size: 3em; /* Was 2.25em */
-	margin-top: 150px;
+	margin-top: 130px;
+	margin-left: 20px;
+	line-height: 1;
 }
-header figure {
-	font-size: 3.5em;
-	font-family: sans-serif;
-	font-weight: 300;
-}
+
 header h2 {
-	margin-top: 10px;
+	margin-top: 35px;
 	font-size: 1.5em;
 	font-weight: 500;
+	margin-left: 20px;
 }
 nav ul {
-	width: 60%;
-	max-width: 280px;
-	margin: 65px auto 0 auto;
+	width: 80%;
+	max-width: 290px;
+	margin: 70px 0 0 20px;
 }
 nav ul li {
 	margin-top: 10px;
@@ -143,6 +141,7 @@ img {
 	padding-top: 5px;
 }
 #projects {
+	height: 100%;
 	padding-bottom: 20px;
 }
 #services ul {
