@@ -180,9 +180,8 @@ p:first-child {
 .blackoverlay:hover {
 	background: none;
 }
-
-
-
+/* End Project Section Styles
+============================= */
 
 #services ul,
 #skills ul {
@@ -290,7 +289,99 @@ footer {
 	background: #111;
 	color: #eee;
 }
-
+/* Media Queries
+================= */
+@media screen and (min-width: 450px) and (max-width: 658px) {
+	header {
+		text-align: center;
+		height: 60%;
+	}
+	nav ul {
+		margin: 40px auto 0 auto;
+	}
+	nav ul li {
+		display: inline-block;
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li a {
+		color: #111;
+		font-weight: 500;
+		border: 2px solid #111;
+		padding: 10px 5px;
+		background: none;
+		-webkit-transition: background 0.5s ease-in-out;
+		-moz-transition: background 0.5s ease-in-out;
+		-o-transition: background 0.5s ease-in-out;
+		transition: background 0.5s ease-in-out;
+	}
+	nav ul li a:hover {
+		background: rgba(0, 0, 0, 0.6);
+	}
+	#social_icons {
+		max-width: 95%;
+	}
+	#social_icons a:nth-child(odd) {
+		padding-right: 0;
+	}
+}
+@media screen and (min-width: 659px) {
+	header {
+		text-align: center;
+		height: 60%;
+	}
+	nav ul {
+		margin: 40px auto 0 auto;
+	}
+	nav ul li {
+		display: inline-block;
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li a {
+		color: #111;
+		font-weight: 500;
+		border: 2px solid #111;
+		padding: 10px 5px;
+		background: none;
+		-webkit-transition: background 0.5s ease-in-out;
+		-moz-transition: background 0.5s ease-in-out;
+		-o-transition: background 0.5s ease-in-out;
+		transition: background 0.5s ease-in-out;
+	}
+	nav ul li a:hover {
+		background: rgba(0, 0, 0, 0.6);
+	}
+	#projects {
+		background: #fff;
+	}
+	#services,
+	#skills {
+		width: 50%;
+		margin-top: 2px;
+		padding: 0;
+		display: inline-block;
+	}
+	#services h3,
+	#skills h3 {
+		text-align: left;
+		width: 260px;
+		padding-left: 38px;
+		margin: 0 auto;
+	}
+	#skills {
+		background: #fff;
+		margin-left: -5px;
+	}
+	#social_icons {
+		max-width: 95%;
+	}
+	#social_icons a:nth-child(odd) {
+		padding-right: 0;
+	}
+}
 
 
 
