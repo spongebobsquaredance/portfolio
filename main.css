@@ -65,12 +65,12 @@ table {
 font-family: 'farray';
 src: url("fonts/FARRAY.otf") format("opentype");
 }
-html,
+/*html,
 body {
 	overflow: auto;
 	margin: 0;
 	-webkit-overflow-scrolling: touch;
-}
+} */
 html,
 body,
 #wrap,
@@ -82,7 +82,7 @@ body {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 	color: #111;
-	background: #eee;
+	background: #fff;
 	text-transform: uppercase;
 	text-align: center;
 	width: 100%;
@@ -367,6 +367,7 @@ footer {
 	}
 	#projects .experiment {
 		height: 250px;
+		width: 100%;
 	}
 	#projects article {
 		float: left;
