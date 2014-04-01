@@ -378,6 +378,9 @@ footer {
 	#projects article:hover p {
 	color: #fff;
 	}
+	article + article:hover p {
+	font-weight: 400;
+	}
 	#services,
 	#skills {
 		width: 50%;
