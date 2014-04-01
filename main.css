@@ -159,7 +159,7 @@ article:last-of-type {
 	background-image: url('img/gradient.jpg');
 }
 .blackoverlay {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	-webkit-transition: background 0.5s ease-in-out;
 	-moz-transition: background 0.5s ease-in-out;
@@ -173,6 +173,7 @@ p {
 }
 article + article:hover p {
 	color: #111;
+	font-weight: 800;
 }
 p:first-child {
 	padding-top: 50px;
@@ -293,8 +294,11 @@ footer {
 ================= */
 @media screen and (min-width: 450px) and (max-width: 658px) {
 	header {
-		text-align: center;
 		height: 60%;
+	}
+	header h1,
+	header h2 {
+		text-align: left;
 	}
 	nav ul {
 		margin: 40px auto 0 auto;
@@ -306,6 +310,7 @@ footer {
 		padding: 0;
 	}
 	nav ul li a {
+		text-align: left;
 		color: #111;
 		font-weight: 500;
 		border: 2px solid #111;
@@ -318,6 +323,9 @@ footer {
 	}
 	nav ul li a:hover {
 		background: rgba(0, 0, 0, 0.6);
+	}
+	#projects {
+		background: #fff;
 	}
 	#social_icons {
 		max-width: 95%;
@@ -357,12 +365,26 @@ footer {
 	#projects {
 		background: #fff;
 	}
+	#projects .experiment {
+		height: 250px;
+	}
+	#projects article {
+		float: left;
+		width: 33.33333%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+	#projects article:hover p {
+	color: #fff;
+	}
 	#services,
 	#skills {
 		width: 50%;
 		margin-top: 2px;
 		padding: 0;
 		display: inline-block;
+		clear: both;
 	}
 	#services h3,
 	#skills h3 {
