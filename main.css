@@ -339,11 +339,6 @@ footer {
 	nav ul li+li {
 		margin-left: 4%;
 	}
-	.experiment {
-		margin-left: -1px;
-		margin-right: -2px;
-		overflow-x: hidden;
-	}
 	.experiment article {
 		display: inline-block;
 		width: 33.33333%;
