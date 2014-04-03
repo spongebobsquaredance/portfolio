@@ -141,7 +141,6 @@ nav ul li a {
 article {
 	width: 100%;
 	height: 33%;
-	background-image: url('ui.jpg');
 	background-position: center;
 	background-size: 100% auto;
 }
@@ -270,158 +269,7 @@ footer {
 	color: #eee;
 }
 /* Media Queries
-=================
-@media screen and (min-width: 500px) and (max-width: 815px) {
-	html,
-	body {
-		width: 100%;
-	}
-	header {
-		height: 50%;
-		text-align: center;
-	}
-	nav ul {
-		margin: 40px auto 0 auto;
-	}
-	nav ul li {
-		display: inline-block;
-		background: none;
-		margin: 0;
-		padding: 0;
-	}
-	nav ul li a {
-		text-align: left;
-		color: #111;
-		font-weight: 500;
-		border-bottom: 1px solid #111;
-		padding: 5px 0;
-		background: none;
-		-webkit-transition: background 0.5s ease-in-out;
-		-moz-transition: background 0.5s ease-in-out;
-		-o-transition: background 0.5s ease-in-out;
-		transition: background 0.5s ease-in-out;
-	}
-	nav ul li a:hover {
-		background: rgba(0, 0, 0, 0.6);
-	}
-	#projects {
-		background: #fff;
-		border-top: 1px solid #444;
-	}
-	#social_icons {
-		max-width: 95%;
-	}
-	#social_icons a:nth-child(odd) {
-		padding-right: 0;
-	}
-}
-@media screen and (min-width: 816px) {
-html,
-body {
-  		height: 100%;
-	}
-	header {
-		text-align: center;
-    }
-    header h1 {
-    	padding-top: 80px;
-    	font-size: 3.3em;
-    }
-    header h2 {
-    	font-size: 2em;
-    }
-	nav ul {
-		margin: 40px auto;
-	}
-	nav ul li {
-		display: inline-block;
-		background: none;
-		margin: 0;
-		padding: 0;
-	}
-	nav ul li a {
-		color: #111;
-		font-weight: 500;
-		border-bottom: 1px solid #444;
-		padding: 5px 0;
-		background: none;
-		-webkit-transition: background 0.5s ease-in-out;
-		-moz-transition: background 0.5s ease-in-out;
-		-o-transition: background 0.5s ease-in-out;
-		transition: background 0.5s ease-in-out;
-	}
-	nav ul li a:hover {
-		background: rgba(0, 0, 0, 0.6);
-	}
-	#projects {
-		background: #fff;
-		border-top: 1px solid #444;
-		height: 100%;
-	}
-	#projects .experiment {
-		height: 400px;
-		width: 100%;
-		text-align: center;
-	}
-	#projects article {
-		/*float: left;
-		width: 33.33333%;
-		height: 100%; 
-		height: 100%;
-		width: 33.37%;
-		display: inline-block;
-		vertical-align: top;
-		background-position: center;
-		background-size: cover;
-	}
-	#projects article:nth-child(2) {
-		margin-left: -5px;
-		margin-right: -5px;
-	}
-	#projects article:hover p {
-	color: #fff;
-	}
-	article + article:hover p {
-	font-weight: 400;
-	}
-	#services,
-	#skills {
-		width: 50%;
-		margin-top: 2px;
-		padding: 0;
-		display: inline-block;
-		clear: both;
-	}
-	#services h3,
-	#skills h3 {
-		text-align: left;
-		width: 260px;
-		padding-left: 38px;
-		padding-top: 40px;
-		margin: 0 auto;
-	}
-	#skills {
-		background: #fff;
-		margin-left: -5px;
-	}
-	#connect {
-		clear: both;
-		height: 40%;
-		border-top: 1px solid #444;
-	}
-	#social_icons {
-		max-width: 95%;
-		margin-top: 40px;
-		display: block;
-	}
-	#social_icons a:nth-child(odd) {
-		padding-right: 0;
-	}
-	footer {
-		clear: both;
-	}
-} */
-/* Small (phone) portrait and landscape orientation */
+================ */
 @media screen and (min-width: 428px) {
 	header {
 		height: 50%;
@@ -491,7 +339,34 @@ body {
 	nav ul li+li {
 		margin-left: 4%;
 	}
-	
+	.experiment article {
+		display: inline-block;
+		width: 33.33333%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		vertical-align: top;
+	}
+	.experiment article p {
+		padding-top: 100px;
+	}
+	#services,
+	#skills {
+		display: inline-block;
+		width: 50%;
+	}
+	#skills {
+		background: #fff;
+	}
+	#social_icons {
+		display: inline-block;
+		vertical-align: baseline;
+		max-width: 100%;
+	}
+	#social_icons a:nth-child(odd) {
+	padding-right: 0px;
+	}
 }
 
 
