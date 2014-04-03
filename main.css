@@ -342,6 +342,7 @@ footer {
 	.experiment {
 		margin-left: -1px;
 		margin-right: -2px;
+		overflow-x: hidden;
 	}
 	.experiment article {
 		display: inline-block;
